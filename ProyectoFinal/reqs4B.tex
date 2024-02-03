@@ -1,0 +1,123 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+
+\vspace{-5cm}
+\title{Planteamiento de la problemática}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Sistema gestor de solicitudes}
+
+En el sistema que proponemos un usuario, según su rol dentro de la empresa, sea capaz de generar solicitudes, a fin de pedir material, documentos, mantenimiento a máquinas o todas aquellas transacciones que maneje el negocio dentro de sí.
+
+El sistema contará con roles específicos, contará tanto con un rol de administración que se encargará de dar de alta a los nuevos usuarios, de actualizar los catálogos de opciones de solicitud, y de verificar los movimientos dentro del sistema. A su vez, el sistema tendrá roles de empleado como supervisor, técnico, y empleado general.
+
+Los empleados, supervisores y técnicos contarán con su propia vista, que les dará acceso a formatos únicos dentro de la aplicación:
+\begin{itemize}
+    \item Los supervisores serán capaces de acceder al registro de solicitudes hechas en su departamento/área y podrán aprobar o desaprobar las solicitudes que los empleados comunes.
+    \item Los empleados de rol “Técnico”, al acceder verán los trabajos asignados que el usuario común reportó con objeto de “Mantenimiento”, y así, ellos podrán tomar responsabilidad de dichas tareas interactuando con esta pantalla llevando así un registro de aquellos trabajos pendientes o cerrados, además de detalles respecto a ellos.
+    \item Los usuarios comunes pueden solicitar diversas cosas. Este formato, como todos, podrán encontrarlo en su “vista”.
+\end{itemize}
+
+Los empleados, en general, podrán acceder a su historial personal de solicitudes generadas. Los supervisores podrán acceder al historial de solicitudes de su área.
+
+Los técnicos serán capaces de acceder a las solicitudes en curso y pendientes. El técnico, al tomar una solicitud, se compromete a darle resolución y no podrá quedar como concluida hasta que el solicitante apruebe, dentro de su vista que realmente fue así y puede continuar con sus actividades.
+
+\vspace{1cm}
+
+\subsection*{Captación de requerimientos}
+
+El cliente solicitante indica los siguientes puntos como requisitos necesarios para el software que ayudará a su empresa:
+
+\begin{enumerate}
+    \item Quiere una vista de tipo administrador con la que pueda dar de alta diferentes empleados a través de una opción que se llame “Gestión de usuarios”. También debe existir un historial donde pueda observar o consultar todas las solicitudes hechas por todos los empleados que han necesitado algún material. Aquí mismo, también quieren ver cuando se ha hecho la solicitud y que rol la ha hecho. Cada solicitud debe mostrar el estado en que se encuentra, si está activa, pendiente, rechazada o aprobada.
+    \item Una segunda vista pero que sea para los empleados donde ellos puedan llenar formularios para realizar la solicitud de materiales. En los formularios deben de mostrarse los datos de los empleados solicitantes, datos como: nombre, departamento y rol. Las solicitudes se dividirán en 3 categorías: suministros, documentos y mantenimiento. De igual manera, se mostrará un historial para que los empleados puedan consultar sus solicitudes creadas y aclarar posibles confusiones e inquietudes.
+    \item Debe haber una tercera vista que sea para supervisores, aquí los supervisores pueden ver un historial donde ellos reciben todas las solicitudes elaboradas por los empleados. Los supervisores se encargan de revisar la información de todas las solicitudes y ellos deciden qué solicitudes son aprobadas y cuáles no. En caso de requerirlo, los supervisores pueden modificar solicitudes para su posterior procesamiento. Cuando reciben las solicitudes estas se encontrarán en estado pendiente y ellos pueden cambiar su estado a rechazada o aprobada.
+    \item Sistema de notificaciones. Cada vez que se le asigne una solicitud a un empleado, ya sea técnico o de mantenimiento, le llegará una notificación a su vista correspondiente.
+\end{enumerate}
+
+\vspace{1cm}
+
+\begin{figure}[h]
+\centering
+\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
+      Requerimientos 1 y 2.}\end{minipage}},rotate=0,center}
+\includegraphics[width=1.3\linewidth]{r1-2.png}
+\label{fig:imagen1}
+\end{adjustbox}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
+      Requerimientos 3 y 4.}\end{minipage}},rotate=0,center}
+\includegraphics[width=1.3\linewidth]{r3-4.png}
+\label{fig:imagen1}
+\end{adjustbox}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
+      Requerimientos 5 y 6.}\end{minipage}},rotate=0,center}
+\includegraphics[width=1.3\linewidth]{r5-6.png}
+\label{fig:imagen1}
+\end{adjustbox}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
+      Requerimientos 7, 8 y 2.}\end{minipage}},rotate=0,center}
+\includegraphics[width=1.3\linewidth]{r7-8-9.png}
+\label{fig:imagen1}
+\end{adjustbox}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
+      Requerimientos 10 y 11.}\end{minipage}},rotate=0,center}
+\includegraphics[width=1.3\linewidth]{r10-11.png}
+\label{fig:imagen1}
+\end{adjustbox}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
+      Requerimientos 12 y 13.}\end{minipage}},rotate=0,center}
+\includegraphics[width=1.3\linewidth]{r12-13.png}
+\label{fig:imagen1}
+\end{adjustbox}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
+      Requerimiento 14.}\end{minipage}},rotate=0,center}
+\includegraphics[width=1.3\linewidth]{r14.png}
+\label{fig:imagen1}
+\end{adjustbox}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{}\end{minipage}},rotate=0,center}
+\includegraphics[width=1.3\linewidth]{final.png}
+\label{fig:imagen1}
+\end{adjustbox}
+\end{figure}
+
+\end{document}
